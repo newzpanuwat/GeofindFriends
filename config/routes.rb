@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   get 'page/about'
 
   get 'page/contact'
+   get 'page/testpage'
 
   resources :users
   

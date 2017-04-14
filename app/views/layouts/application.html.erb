@@ -29,13 +29,14 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <%= link_to "Geofindfriends", root_path, class: "navbar-brand" %>
+        <h1><%= link_to "Geofindfriends | ", root_path, class: "navbar-brand" %></h1>
       </div>
       <div id="navbar" class="collapse navbar-collapse">
         <ul class="nav navbar-nav">
-          <li class="active"><a href="/page/home">Home</a></li>
-          <li><a href="/page/about">About</a></li>
-          <li><a href="/page/contact">Contact</a></li>
+          <li class="active">
+          <li><h2><%= link_to "Home | ", root_path, class: "navbar-brand" %></h2></li>
+          <li><h2><%= link_to "About | ", page_about_path, class: "navbar-brand" %></h2></li>
+          <li><h2><%= link_to "Contact", page_contact_path, class: "navbar-brand" %></h2></li>
         </ul>
       </div>
     </div>
