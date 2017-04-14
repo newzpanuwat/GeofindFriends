@@ -16,6 +16,13 @@ class UsersController < ApplicationController
   # GET /users/1
   # GET /users/1.json
   def show
+    @users = User.find(params[:id])
+    @hash = Gmaps4rails.build_markers(@users) do |user, marker|
+    marker.lat user.latitude
+    marker.lng user.longtitude
+    marker.infowindow user.title
+    end
+    
   end
 
   # GET /users/new
